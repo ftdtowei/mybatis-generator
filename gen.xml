@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE generatorConfiguration    
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"    
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">    
+    
+<generatorConfiguration>    
+  <classPathEntry location="D:\\workspace\\JFServer-workspace\\generator\\ojdbc6-11.2.0.4.jar" />    
+    
+  <context id="Mysql2Tables" targetRuntime="MyBatis3">    
+    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"    
+        connectionURL="jdbc:oracle:thin:@54.223.241.157:1521:wxddb"
+        userId="wepay"    
+        password="wepay">    
+    </jdbcConnection>    
+    
+    <javaTypeResolver >    
+      <property name="forceBigDecimals" value="false" />    
+    </javaTypeResolver>    
+    
+    <javaModelGenerator targetPackage="com.test.model" targetProject="src">    
+      <property name="enableSubPackages" value="true" />    
+      <property name="trimStrings" value="true" />    
+    </javaModelGenerator>    
+    
+    <sqlMapGenerator targetPackage="com.test.mapper"  targetProject="src">    
+      <property name="enableSubPackages" value="true" />    
+    </sqlMapGenerator>    
+    
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.test.dao"  targetProject="src">    
+      <property name="enableSubPackages" value="true" />    
+    </javaClientGenerator>    
+    <table  tableName="UCARD_PAY_SYS_USER" domainObjectName="PaySysUser" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_PAY_CONFIG" domainObjectName="PayConfig" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_FEE_CONFIG" domainObjectName="FeeConfig" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_PAY_DICT" domainObjectName="PayDict" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_PAY_ORDER_LIST" domainObjectName="PayOrderList" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_PAY_ORDER_HISTORY" domainObjectName="PayOrderHistory" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+    <table  tableName="UCARD_PAY_REPAYMENT_FAIL" domainObjectName="PayRepaymentFail" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+    </table>
+  </context>    
+</generatorConfiguration>  
