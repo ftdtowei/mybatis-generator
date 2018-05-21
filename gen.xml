@@ -8,9 +8,9 @@
     
   <context id="Mysql2Tables" targetRuntime="MyBatis3">    
     <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"    
-        connectionURL="jdbc:oracle:thin:@54.223.241.157:1521:wxddb"
-        userId="wepay"    
-        password="wepay">    
+        connectionURL="jdbc:oracle:thin:@address:1521:wxddb"
+        userId=""    
+        password="">    
     </jdbcConnection>    
     
     <javaTypeResolver >    
